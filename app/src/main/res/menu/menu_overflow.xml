@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- TODO Step 8 - Add an item for the settings fragment -->
+    <!--<item-->
+        <!--android:id="@+id/settings_fragment"-->
+        <!--android:icon="@drawable/ic_settings"-->
+        <!--android:title="@string/settings"-->
+        <!--android:menuCategory="secondary" />-->
+
+    <!-- TODO END Step 8 -->
+</menu>
