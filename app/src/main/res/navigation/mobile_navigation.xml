@@ -84,7 +84,7 @@
             android:defaultValue="Android!"/>
         <!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
 
-        <!--<deepLink app:uri="www.example.com/{myarg}/" />-->
+        <!--<deepLink app:uri="www.example.com/{myarg}" />-->
 
         <!-- TODO END STEP 12 -->
     </fragment>
