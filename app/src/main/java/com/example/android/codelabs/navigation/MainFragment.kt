@@ -53,7 +53,7 @@ class MainFragment : Fragment() {
 //            .build()
 //
 //        view.findViewById<Button>(R.id.navigate_dest_bt)?.setOnClickListener {
-//            findNavController(this).navigate(R.id.flow_step_one, null, options)
+//            findNavController(it).navigate(R.id.flow_step_one, null, options)
 //        }
         //TODO ENDSTEP 6
 
