@@ -21,7 +21,7 @@
         android:label="@string/home"
         tools:layout="@layout/main_fragment">
 
-        <!-- TODO STEP 8 - Add action with transitions -->
+        <!-- TODO STEP 7 - Add action with transitions -->
         <!--<action-->
             <!--android:id="@+id/next_action"-->
             <!--app:destination="@+id/flow_step_one"-->
