@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2017 The Android Open Source Project
+  ~ Copyright (C) 2018 The Android Open Source Project
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -23,13 +23,13 @@
         android:layout_height="wrap_content"
         />
     <EditText
-        android:id="@+id/edit_args"
+        android:id="@+id/args_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type your deep link args"/>
+        android:hint="@string/deep_link_instructions" />
     <Button
-        android:id="@+id/send_notification"
+        android:id="@+id/send_notification_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send deep link notification"/>
+        android:text="@string/send_deep_link_notification_button" />
 </LinearLayout>

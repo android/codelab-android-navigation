@@ -8,46 +8,25 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="android">
+                  <entry key="deeplink_dest">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="883" />
-                            <option name="y" value="382" />
+                            <option name="x" value="43" />
+                            <option name="y" value="-19" />
                           </Point>
                         </option>
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="flow_step_one">
+                  <entry key="flow_step_one_dest">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="645" />
-                            <option name="y" value="100" />
-                          </Point>
-                        </option>
-                        <option name="myPositions">
-                          <map>
-                            <entry key="next_action">
-                              <value>
-                                <LayoutPositions />
-                              </value>
-                            </entry>
-                          </map>
-                        </option>
-                      </LayoutPositions>
-                    </value>
-                  </entry>
-                  <entry key="flow_step_two">
-                    <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="882" />
-                            <option name="y" value="62" />
+                            <option name="x" value="42" />
+                            <option name="y" value="280" />
                           </Point>
                         </option>
                         <option name="myPositions">
@@ -62,13 +41,34 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="launcher_home">
+                  <entry key="flow_step_two_dest">
                     <value>
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="410" />
-                            <option name="y" value="70" />
+                            <option name="x" value="265" />
+                            <option name="y" value="280" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="next_action">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="home_dest">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-190" />
+                            <option name="y" value="277" />
                           </Point>
                         </option>
                       </LayoutPositions>

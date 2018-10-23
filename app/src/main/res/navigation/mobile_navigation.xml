@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (C) 2017 The Android Open Source Project
+  ~ Copyright (C) 2018 The Android Open Source Project
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
   ~ You may obtain a copy of the License at
@@ -14,67 +14,66 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            app:startDestination="@+id/launcher_home">
+    app:startDestination="@+id/home_dest">
     <fragment
-        android:id="@+id/launcher_home"
-        android:name="com.example.android.codelabs.navigation.MainFragment"
+        android:id="@+id/home_dest"
+        android:name="com.example.android.codelabs.navigation.HomeFragment"
         android:label="@string/home"
-        tools:layout="@layout/main_fragment">
+        tools:layout="@layout/home_fragment">
 
-        <!-- TODO STEP 8 - Add action with transitions -->
+        <!-- TODO STEP 7.1 - Add action with transitions -->
         <!--<action-->
             <!--android:id="@+id/next_action"-->
-            <!--app:destination="@+id/flow_step_one"-->
+            <!--app:destination="@+id/flow_step_one_dest"-->
             <!--app:enterAnim="@anim/slide_in_right"-->
             <!--app:exitAnim="@anim/slide_out_left"-->
             <!--app:popEnterAnim="@anim/slide_in_left"-->
             <!--app:popExitAnim="@anim/slide_out_right" />-->
-
-        <!-- TODO ENDSTEP -->
+        <!-- TODO END STEP 7.1 -->
 
     </fragment>
 
     <fragment
-        android:id="@+id/flow_step_one"
+        android:id="@+id/flow_step_one_dest"
         android:name="com.example.android.codelabs.navigation.FlowStepFragment"
         tools:layout="@layout/flow_step_one_fragment">
         <argument
-            android:name="step"
-            app:type="integer"
+            android:name="flowStepNumber"
+            app:argType="integer"
             android:defaultValue="1"/>
 
         <action
             android:id="@+id/next_action"
-            app:destination="@+id/flow_step_two">
+            app:destination="@+id/flow_step_two_dest">
         </action>
     </fragment>
 
     <fragment
-        android:id="@+id/flow_step_two"
+        android:id="@+id/flow_step_two_dest"
         android:name="com.example.android.codelabs.navigation.FlowStepFragment"
         tools:layout="@layout/flow_step_two_fragment">
 
         <argument
-            android:name="step"
-            type="integer"
+            android:name="flowStepNumber"
+            app:argType="integer"
             android:defaultValue="2"/>
 
         <action
             android:id="@+id/next_action"
-            app:popUpTo="@id/launcher_home">
+            app:popUpTo="@id/home_dest">
         </action>
     </fragment>
 
     <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
     <!--<fragment-->
-        <!--android:id="@+id/settings_fragment"-->
+        <!--android:id="@+id/settings_dest"-->
         <!--android:name="com.example.android.codelabs.navigation.SettingsFragment"-->
-        <!--android:label="fragment_settings"-->
-        <!--tools:layout="@layout/fragment_settings"/>-->
+        <!--android:label="@string/settings"-->
+        <!--tools:layout="@layout/settings_fragment" />-->
     <!-- TODO END STEP 4 -->
 
     <fragment
-        android:id="@+id/android"
+        android:id="@+id/deeplink_dest"
         android:name="com.example.android.codelabs.navigation.DeepLinkFragment"
         android:label="@string/deeplink"
         tools:layout="@layout/deeplink_fragment">
@@ -82,10 +81,10 @@
         <argument
             android:name="myarg"
             android:defaultValue="Android!"/>
-        <!-- TODO STEP 12 - Add a deep link to www.iana.org/domains/{myarg}/ -->
+        <!-- TODO STEP 12.1 - Add a deep link to www.example.com/{myarg}/ -->
 
         <!--<deepLink app:uri="www.example.com/{myarg}" />-->
 
-        <!-- TODO END STEP 12 -->
+        <!-- TODO END STEP 12.1 -->
     </fragment>
 </navigation>
