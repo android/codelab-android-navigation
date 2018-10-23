@@ -1,5 +1,5 @@
 /*
- * Copyright 2017, The Android Open Source Project
+ * Copyright 2018, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,14 +19,14 @@ apply plugin: 'kotlin-android'
 apply plugin: 'androidx.navigation.safeargs'
 
 android {
-    compileSdkVersion 27
+    compileSdkVersion 28
     defaultConfig {
         applicationId 'com.example.android.codelabs.navigation'
         minSdkVersion 21
-        targetSdkVersion 27
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
@@ -56,14 +56,14 @@ dependencies {
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlinVersion"
 
-    implementation 'com.android.support:design:' + rootProject.supportLibVersion
-    implementation 'com.android.support:appcompat-v7:' + rootProject.supportLibVersion
-    implementation 'com.android.support:cardview-v7:' + rootProject.supportLibVersion
-    implementation 'com.android.support:recyclerview-v7:' + rootProject.supportLibVersion
-    implementation 'com.android.support.constraint:constraint-layout:' + rootProject.constraintLayoutVersion
+    implementation 'com.google.android.material:material:' + rootProject.supportVersion
+    implementation 'androidx.appcompat:appcompat:' + rootProject.supportVersion
+    implementation 'androidx.cardview:cardview:' + rootProject.supportVersion
+    implementation 'androidx.recyclerview:recyclerview:' + rootProject.supportVersion
+    implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintLayoutVersion
 
     // Navigation
+    implementation 'android.arch.navigation:navigation-fragment-ktx:' + rootProject.navigationVersion
+    implementation 'android.arch.navigation:navigation-ui-ktx:' + rootProject.navigationVersion
 
-    implementation 'android.arch.navigation:navigation-fragment:' + rootProject.navigationVersion
-    implementation 'android.arch.navigation:navigation-ui:' + rootProject.navigationVersion
 }

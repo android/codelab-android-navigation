@@ -17,10 +17,10 @@
 package com.example.android.codelabs.navigation
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 
 /**
@@ -29,21 +29,20 @@ import androidx.navigation.Navigation
 class FlowStepFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         setHasOptionsMenu(true)
 
-        val step = arguments?.getInt("step")
+        val flowStepNumber = arguments?.getInt("flowStepNumber")
 
-        // TODO STEP 9 - Use type-safe arguments - remove previous line!
-//        val step = arguments?.let {
-//            val safeArgs = FlowStepFragmentArgs.fromBundle(it)
-//            safeArgs.step
-//        }
-        // TODO ENDSTEP 9
+        // TODO STEP 8 - Use type-safe arguments - remove previous line!
+//        val safeArgs = FlowStepFragmentArgs.fromBundle(arguments)
+//        val flowStepNumber = safeArgs.flowStepNumber
+        // TODO END STEP 8
 
-        return when (step) {
+        return when (flowStepNumber) {
             2 -> inflater.inflate(R.layout.flow_step_two_fragment, container, false)
             else -> inflater.inflate(R.layout.flow_step_one_fragment, container, false)
         }

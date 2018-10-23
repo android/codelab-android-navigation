@@ -1,5 +1,5 @@
 /*
- * Copyright 2017, The Android Open Source Project
+ * Copyright 2018, The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,15 +19,15 @@
 buildscript {
 
     ext {
-        kotlinVersion = '1.2.41'
+        kotlinVersion = '1.2.71'
     }
     repositories {
         google()
         jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0-alpha14'
-        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-alpha01'
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'android.arch.navigation:navigation-safe-args-gradle-plugin:1.0.0-alpha06'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -46,10 +46,7 @@ task clean(type: Delete) {
 }
 
 ext {
-    supportLibVersion = "27.1.1"
-    runnerVersion = "0.5"
-    rulesVersion = "0.5"
-    espressoVersion = "2.2.2"
-    navigationVersion = "1.0.0-alpha01"
-    constraintLayoutVersion = "1.1.0"
+    supportVersion = "1.0.0"
+    navigationVersion = "1.0.0-alpha06"
+    constraintLayoutVersion = "2.0.0-alpha2"
 }
