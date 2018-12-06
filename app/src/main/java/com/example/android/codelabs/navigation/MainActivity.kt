@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         setupBottomNavMenu(navController)
 
-        navController.addOnNavigatedListener { _, destination ->
+        navController.addOnDestinationChangedListener { _, destination, _ ->
             val dest: String = try {
                 resources.getResourceName(destination.id)
             } catch (e: Resources.NotFoundException) {
@@ -88,7 +88,8 @@ class MainActivity : AppCompatActivity() {
 //        // And, since we are passing in drawerLayout, it will also determine whether to
 //        // show the up arrow or drawer menu icon
 //        drawerLayout = findViewById(R.id.drawer_layout)
-//        setupActionBarWithNavController(navController, drawerLayout)
+//        val appBarConfiguration = AppBarConfiguration(navController.graph, drawerLayout)
+//        setupActionBarWithNavController(navController, appBarConfiguration)
         // TODO END STEP 9.5
     }
 
@@ -120,7 +121,7 @@ class MainActivity : AppCompatActivity() {
 //    override fun onSupportNavigateUp(): Boolean {
 //        // Allows NavigationUI to support proper up navigation or the drawer layout
 //        // drawer menu, depending on the situation
-//        return drawerLayout.navigateUp(findNavController(R.id.my_nav_host_fragment))
+//        return findNavController(R.id.my_nav_host_fragment).navigateUp(drawerLayout)
 //    }
     // TODO END STEP 9.6
 }
