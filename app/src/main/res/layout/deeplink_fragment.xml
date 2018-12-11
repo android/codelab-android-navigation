@@ -14,19 +14,26 @@
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
   -->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="8dp">
-    <TextView android:id="@+id/text"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context="com.example.android.codelabs.navigation.DeepLinkFragment">
+
+    <TextView
+        android:id="@+id/text"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
+
     <EditText
         android:id="@+id/args_edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/deep_link_instructions" />
+
     <Button
         android:id="@+id/send_notification_button"
         android:layout_width="match_parent"
