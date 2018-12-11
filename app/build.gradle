@@ -56,10 +56,11 @@ dependencies {
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlinVersion"
 
-    implementation 'com.google.android.material:material:' + rootProject.supportVersion
-    implementation 'androidx.appcompat:appcompat:' + rootProject.supportVersion
-    implementation 'androidx.cardview:cardview:' + rootProject.supportVersion
-    implementation 'androidx.recyclerview:recyclerview:' + rootProject.supportVersion
+    implementation 'com.google.android.material:material:' + rootProject.materialVersion
+    implementation 'androidx.appcompat:appcompat:' + rootProject.appCompatVersion
+    implementation 'androidx.cardview:cardview:' + rootProject.cardViewVersion
+    implementation 'androidx.recyclerview:recyclerview:' + rootProject.recyclerVersion
+
     implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintLayoutVersion
 
     // Navigation
