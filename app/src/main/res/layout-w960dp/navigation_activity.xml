@@ -17,8 +17,10 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.android.codelabs.navigation.MainActivity">
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -28,27 +30,29 @@
         app:elevation="0dp"
         app:headerLayout="@layout/nav_view_header"
         app:menu="@menu/nav_drawer_menu" />
+
     <View
         android:layout_width="1dp"
         android:layout_height="match_parent"
         android:layout_toEndOf="@id/nav_view"
-        android:background="?android:attr/listDivider"/>
+        android:background="?android:attr/listDivider" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/nav_view"
-        android:layout_alignParentTop="true"/>
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+
     <fragment
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
         android:id="@+id/my_nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
-        app:navGraph="@navigation/mobile_navigation"
-        app:defaultNavHost="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
         android:layout_toEndOf="@id/nav_view"
-        android:layout_below="@id/toolbar"/>
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
 </RelativeLayout>
