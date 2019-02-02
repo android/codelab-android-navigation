@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // TODO: swap commented lines to use original alternative dpi layouts (navigation drawer
+        // TODO  only visible under special circumstances when using "navigation_activity_with_overrides")
+//        setContentView(R.layout.navigation_activity_with_overrides)
         setContentView(R.layout.navigation_activity)
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
