@@ -16,7 +16,7 @@
 
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
-apply plugin: 'androidx.navigation.safeargs'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
     compileSdkVersion 28
@@ -58,7 +58,6 @@ dependencies {
 
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
-    implementation "androidx.cardview:cardview:$rootProject.cardViewVersion"
     implementation "androidx.recyclerview:recyclerview:$rootProject.recyclerVersion"
 
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
