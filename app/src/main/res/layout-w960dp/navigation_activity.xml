@@ -44,7 +44,7 @@
         android:layout_alignParentTop="true"
         android:layout_toEndOf="@id/nav_view"
         android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark" />
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar" />
 
     <fragment
         android:id="@+id/my_nav_host_fragment"
