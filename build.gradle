@@ -23,7 +23,7 @@ buildscript {
         appCompatVersion = "1.1.0-alpha02"
         recyclerVersion = "1.1.0-alpha02"
         materialVersion = "1.1.0-alpha04"
-        navigationVersion = "2.0.0-rc02"
+        navigationVersion = "2.0.0"
         constraintLayoutVersion = "2.0.0-alpha3"
     }
 
