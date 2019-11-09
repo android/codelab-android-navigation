@@ -81,10 +81,10 @@
         <argument
             android:name="myarg"
             android:defaultValue="Android!"/>
-        <!-- TODO STEP 12.1 - Add a deep link to www.example.com/{myarg}/ -->
+        <!-- TODO STEP 11.1 - Add a deep link to www.example.com/{myarg}/ -->
 
         <!--<deepLink app:uri="www.example.com/{myarg}" />-->
 
-        <!-- TODO END STEP 12.1 -->
+        <!-- TODO END STEP 11.1 -->
     </fragment>
 </navigation>

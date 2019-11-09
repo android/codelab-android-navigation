@@ -33,9 +33,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
-            <!-- TODO STEP 12.2 -->
+            <!-- TODO STEP 11.2 -->
             <!--<nav-graph android:value="@navigation/mobile_navigation" />-->
-            <!-- TODO END STEP 12.2-->
+            <!-- TODO END STEP 11.2-->
 
         </activity>
 
