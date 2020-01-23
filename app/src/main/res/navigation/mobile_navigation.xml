@@ -21,15 +21,13 @@
         android:label="@string/home"
         tools:layout="@layout/home_fragment">
 
-        <!-- TODO STEP 7.1 - Add action with transitions -->
-        <!--<action-->
-            <!--android:id="@+id/next_action"-->
-            <!--app:destination="@+id/flow_step_one_dest"-->
-            <!--app:enterAnim="@anim/slide_in_right"-->
-            <!--app:exitAnim="@anim/slide_out_left"-->
-            <!--app:popEnterAnim="@anim/slide_in_left"-->
-            <!--app:popExitAnim="@anim/slide_out_right" />-->
-        <!-- TODO END STEP 7.1 -->
+        <action
+            android:id="@+id/action_home_dest_to_flow_step_one_dest"
+            app:destination="@id/flow_step_one_dest"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
 
     </fragment>
 
