@@ -65,7 +65,7 @@
     <fragment
         android:id="@+id/settings_dest"
         android:name="com.example.android.codelabs.navigation.SettingsFragment"
-        android:label="settings_fragment"
+        android:label="Settings"
         tools:layout="@layout/settings_fragment" />
 
     <fragment
