@@ -67,6 +67,11 @@
         android:name="com.example.android.codelabs.navigation.SettingsFragment"
         android:label="Settings"
         tools:layout="@layout/settings_fragment" />
+    <fragment
+        android:id="@+id/shopping_dest"
+        android:name="com.example.android.codelabs.navigation.ShoppingCartFragment"
+        android:label="Shopping"
+        tools:layout="@layout/shopping_fragment" />
 
     <fragment
         android:id="@+id/deeplink_dest"
