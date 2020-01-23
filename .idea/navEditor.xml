@@ -73,7 +73,7 @@
                         </option>
                         <option name="myPositions">
                           <map>
-                            <entry key="action_home_dest_to_flow_step_one_dest">
+                            <entry key="next_action">
                               <value>
                                 <LayoutPositions />
                               </value>

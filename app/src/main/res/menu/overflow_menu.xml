@@ -12,11 +12,9 @@
   ~ limitations under the License.
   -->
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- TODO Step 9.1 - Add an item for the settings fragment -->
-    <!--<item-->
-        <!--android:id="@+id/settings_dest"-->
-        <!--android:icon="@drawable/ic_settings"-->
-        <!--android:menuCategory="secondary"-->
-        <!--android:title="@string/settings" />-->
-    <!-- TODO END STEP 9.1 -->
+    <item
+        android:id="@+id/settings_dest"
+        android:icon="@drawable/ic_settings"
+        android:menuCategory="secondary"
+        android:title="@string/settings" />
 </menu>
