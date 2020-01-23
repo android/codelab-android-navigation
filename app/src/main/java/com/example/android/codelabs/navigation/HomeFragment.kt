@@ -52,9 +52,18 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.flow_step_one_dest, null, navOptions)
         }
 
+        /* 1 way of navigation
         view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_home_dest_to_flow_step_one_dest, null)
+             Navigation.createNavigateOnClickListener(R.id.action_home_dest_to_flow_step_one_dest, null)
         )
+         */
+
+        // 2 way of navigation
+        view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener {
+            val flowStepNumber = 1
+            val nextAction = HomeFragmentDirections.nextAction(flowStepNumber)
+            findNavController().navigate(nextAction)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
