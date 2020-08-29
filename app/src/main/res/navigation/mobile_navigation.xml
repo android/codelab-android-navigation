@@ -12,8 +12,8 @@
   ~ limitations under the License.
   -->
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@+id/home_dest">
     <fragment
         android:id="@+id/home_dest"
@@ -23,12 +23,12 @@
 
         <!-- TODO STEP 7.1 - Add action with transitions -->
         <!--<action-->
-            <!--android:id="@+id/next_action"-->
-            <!--app:destination="@+id/flow_step_one_dest"-->
-            <!--app:enterAnim="@anim/slide_in_right"-->
-            <!--app:exitAnim="@anim/slide_out_left"-->
-            <!--app:popEnterAnim="@anim/slide_in_left"-->
-            <!--app:popExitAnim="@anim/slide_out_right" />-->
+        <!--android:id="@+id/next_action"-->
+        <!--app:destination="@+id/flow_step_one_dest"-->
+        <!--app:enterAnim="@anim/slide_in_right"-->
+        <!--app:exitAnim="@anim/slide_out_left"-->
+        <!--app:popEnterAnim="@anim/slide_in_left"-->
+        <!--app:popExitAnim="@anim/slide_out_right" />-->
         <!-- TODO END STEP 7.1 -->
 
     </fragment>
@@ -39,13 +39,12 @@
         tools:layout="@layout/flow_step_one_fragment">
         <argument
             android:name="flowStepNumber"
-            app:argType="integer"
-            android:defaultValue="1"/>
+            android:defaultValue="1"
+            app:argType="integer" />
 
         <action
             android:id="@+id/next_action"
-            app:destination="@+id/flow_step_two_dest">
-        </action>
+            app:destination="@+id/flow_step_two_dest"></action>
     </fragment>
 
     <fragment
@@ -55,22 +54,19 @@
 
         <argument
             android:name="flowStepNumber"
-            app:argType="integer"
-            android:defaultValue="2"/>
+            android:defaultValue="2"
+            app:argType="integer" />
 
         <action
             android:id="@+id/next_action"
-            app:popUpTo="@id/home_dest">
-        </action>
+            app:popUpTo="@id/home_dest"></action>
     </fragment>
 
-    <!-- TODO STEP 4 Create a new navigation destination pointing to SettingsFragment -->
-    <!--<fragment-->
-        <!--android:id="@+id/settings_dest"-->
-        <!--android:name="com.example.android.codelabs.navigation.SettingsFragment"-->
-        <!--android:label="@string/settings"-->
-        <!--tools:layout="@layout/settings_fragment" />-->
-    <!-- TODO END STEP 4 -->
+    <fragment
+        android:id="@+id/settings_dest"
+        android:name="com.example.android.codelabs.navigation.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/settings_fragment"></fragment>
 
     <fragment
         android:id="@+id/deeplink_dest"
@@ -80,7 +76,7 @@
 
         <argument
             android:name="myarg"
-            android:defaultValue="Android!"/>
+            android:defaultValue="Android!" />
         <!-- TODO STEP 11.1 - Add a deep link to www.example.com/{myarg}/ -->
 
         <!--<deepLink app:uri="www.example.com/{myarg}" />-->
