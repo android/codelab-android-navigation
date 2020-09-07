@@ -31,4 +31,10 @@
     <string name="next_step_button">Navigate next step</string>
     <string name="finish_button">Finish Flow</string>
     <string name="send_deep_link_notification_button">Send deep link notification</string>
+    <string name="roll_dice">Roll a dice</string>
+    <string name="roll">Roll</string>
+    <string name="hyphen">-</string>
+    <string name="navigate_result_button">Navigate for result</string>
+    <string name="no_result">No result</string>
+    <string name="result">Result: %1$s</string>
 </resources>

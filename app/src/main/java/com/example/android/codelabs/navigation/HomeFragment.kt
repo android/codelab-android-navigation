@@ -19,6 +19,7 @@ package com.example.android.codelabs.navigation
 import android.os.Bundle
 import android.view.*
 import android.widget.Button
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
@@ -61,6 +62,15 @@ class HomeFragment : Fragment() {
             val flowStepNumberArg = 1
             val action = HomeFragmentDirections.nextAction(flowStepNumberArg)
             findNavController().navigate(action)
+        }
+
+        view.findViewById<Button>(R.id.navigate_result_button)?.setOnClickListener {
+            val action = HomeFragmentDirections.resultAction()
+            findNavController().navigate(action)
+        }
+
+        findNavController().currentBackStackEntry?.savedStateHandle?.getLiveData<Int>(ResultFragment.KEY_RESULT)?.observe(viewLifecycleOwner) {
+            result -> view.findViewById<TextView>(R.id.result).text = getString(R.string.result, result)
         }
     }
 

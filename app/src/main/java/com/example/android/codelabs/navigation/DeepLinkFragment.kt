@@ -47,13 +47,13 @@ class DeepLinkFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val textView = view.findViewById<TextView>(R.id.text)
-        textView.text = arguments?.getString("myarg")
+        textView.text = requireArguments().getString("myarg")
 
         val notificationButton = view.findViewById<Button>(R.id.send_notification_button)
         notificationButton.setOnClickListener {
             val editArgs = view.findViewById<EditText>(R.id.args_edit_text)
             val args = Bundle()
-            args.putString("myarg", editArgs.getText().toString())
+            args.putString("myarg", editArgs.text.toString())
 
             val deeplink = findNavController().createDeepLink()
                     .setDestination(R.id.deeplink_dest)
@@ -61,14 +61,14 @@ class DeepLinkFragment : Fragment() {
                     .createPendingIntent()
 
             val notificationManager =
-                    context?.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
+                    requireContext().getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 notificationManager.createNotificationChannel(NotificationChannel(
                         "deeplink", "Deep Links", NotificationManager.IMPORTANCE_HIGH))
             }
 
             val builder = NotificationCompat.Builder(
-                    context!!, "deeplink")
+                    requireContext(), "deeplink")
                     .setContentTitle("Navigation")
                     .setContentText("Deep link to Android")
                     .setSmallIcon(R.drawable.ic_android)
