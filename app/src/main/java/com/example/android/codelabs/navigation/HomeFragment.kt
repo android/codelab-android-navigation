@@ -20,6 +20,7 @@ import android.os.Bundle
 import android.view.*
 import android.widget.Button
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
 
@@ -78,6 +79,10 @@ class HomeFragment : Fragment() {
         //TODO END STEP 6
 
         //TODO STEP 7.2 - Update the OnClickListener to navigate using an action
+        view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener(
+                Navigation.createNavigateOnClickListener(R.id.home_to_step_one_action, null)
+        )
+
 //        view.findViewById<Button>(R.id.navigate_action_button)?.setOnClickListener(
 //                Navigation.createNavigateOnClickListener(R.id.next_action, null)
 //        )
