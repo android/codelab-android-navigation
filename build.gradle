@@ -19,20 +19,20 @@
 buildscript {
 
     ext {
-        kotlinVersion = '1.3.50'
-        appCompatVersion = "1.1.0"
-        recyclerVersion = "1.1.0-rc01"
-        materialVersion = "1.1.0-beta01"
-        navigationVersion = "2.1.0"
-        constraintLayoutVersion = "2.0.0-beta3"
+        kotlinVersion = '1.6.10'
+        appCompatVersion = "1.4.0"
+        recyclerVersion = "1.2.1"
+        materialVersion = "1.4.0"
+        navigationVersion = "2.3.5"
+        constraintLayoutVersion = "2.1.2"
     }
 
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.2'
+        classpath 'com.android.tools.build:gradle:7.0.4'
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$navigationVersion"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
 
@@ -44,7 +44,7 @@ buildscript {
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
